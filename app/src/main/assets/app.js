@@ -121,7 +121,8 @@ function home() {
   });
   h += `<button class="lcard wide" data-l="0" style="background:${MEGA.color}"><span class="e">🚀</span>
       <b>${MEGA.fa}</b><small class="stars">⭐ ${lessonStars(0)}/${GAMES.filter(g => g.mega).length * 3}</small></button></div>
-    <div class="tip">💡 هر بازی تا ۳ ستاره دارد. هر جواب درست ۱۰ امتیاز می‌دهد. هر ۱۰۰ امتیاز یک سطح بالا می‌روی!</div>`;
+    <div class="tip">💡 هر بازی تا ۳ ستاره دارد. هر جواب درست ۱۰ امتیاز می‌دهد. هر ۱۰۰ امتیاز یک سطح بالا می‌روی!</div>
+    <div class="brand"><img src="logo.png" alt="logo"><div>تولید شده در شرکت<br><b>نسل جدید اتوماسیون صنعتی</b></div></div>`;
   app.innerHTML = h;
   app.querySelectorAll('[data-l]').forEach(b => b.onclick = () => lessonMenu(+b.dataset.l));
   window.scrollTo(0, 0);
