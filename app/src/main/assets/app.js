@@ -109,7 +109,7 @@ function header(back, mid) {
 function home() {
   nav = { s: 'home' };
   const pct = S.xp % 100;
-  let h = `<div class="hero"><div class="mascot">🦉</div><div style="flex:1">
+  let h = `<div class="brand top"><img src="logo.png" alt="logo"><div>تولید شده در شرکت <b>نسل جدید اتوماسیون صنعتی</b></div></div><div class="hero"><div class="mascot">🦉</div><div style="flex:1">
     <h1>English Buddy</h1><p>Prospect 2 · پایه هشتم</p>
     <p>${levelTitle()} · سطح ${level()} · 🔥 ${S.streak} روز پشت‌سرهم</p>
     <div class="bar"><i style="width:${pct}%"></i></div></div></div>
